@@ -134,7 +134,6 @@ jobs:
 
     - name: Delete untagged images
       uses: dataaxiom/ghcr-cleanup-action@v1
-      continue-on-error: true
       with:
         packages: ${{ steps.mirror_images.outputs.package_names }}
         delete-untagged: true
