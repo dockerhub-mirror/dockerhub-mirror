@@ -27,6 +27,10 @@ the slash is replaced with a double underscore (`__`) to separate the upstream o
 | `busybox:stable-musl`               | `ghcr.io/dockerhub-mirror/busybox:stable-musl`
 | `debian:stable`                     | `ghcr.io/dockerhub-mirror/debian:stable`
 | `debian:stable-slim`                | `ghcr.io/dockerhub-mirror/debian:stable-slim`
+| `moby/buildkit:buildx-stable-1`     | `ghcr.io/dockerhub-mirror/buildkit:buildx-stable-1`
+| `moby/buildkit:buildx-stable-1-rootless` | `ghcr.io/dockerhub-mirror/buildkit:buildx-stable-1-rootless`
+| `moby/buildkit:latest`              | `ghcr.io/dockerhub-mirror/buildkit:latest`
+| `moby/buildkit:rootless`            | `ghcr.io/dockerhub-mirror/buildkit:rootless`
 | `node:lts`                          | `ghcr.io/dockerhub-mirror/node:lts`
 | `node:lts-slim`                     | `ghcr.io/dockerhub-mirror/node:lts-slim`
 | `registry:latest`                   | `ghcr.io/dockerhub-mirror/registry:latest`

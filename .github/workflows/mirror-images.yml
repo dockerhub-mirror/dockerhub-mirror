@@ -12,6 +12,10 @@ env:
     bitnami/minideb:latest
     debian:stable
     debian:stable-slim
+    moby/buildkit:latest
+    moby/buildkit:rootless
+    moby/buildkit:buildx-stable-1
+    moby/buildkit:buildx-stable-1-rootless
     multiarch/qemu-user-static:latest
     node:lts
     node:lts-slim
