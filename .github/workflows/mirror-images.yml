@@ -6,10 +6,14 @@ env:
   SOURCE_IMAGES: |
     alpine:3
     alpine:latest
+    busybox:1
     busybox:latest
     busybox:stable
     busybox:stable-musl
+    bitnami/minideb:bookworm
     bitnami/minideb:latest
+    debian:bookworm
+    debian:bookworm-slim
     debian:stable
     debian:stable-slim
     moby/buildkit:latest
@@ -17,6 +21,8 @@ env:
     moby/buildkit:buildx-stable-1
     moby/buildkit:buildx-stable-1-rootless
     multiarch/qemu-user-static:latest
+    node:current
+    node:current-slim
     node:lts
     node:lts-slim
     registry:latest
