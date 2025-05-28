@@ -2,7 +2,7 @@
 
 [![Sync Status](https://github.com/dockerhub-mirror/dockerhub-mirror/actions/workflows/mirror-images.yml/badge.svg)](https://github.com/dockerhub-mirror/dockerhub-mirror/actions/workflows/mirror-images.yml)
 
-This repository **mirrors selected public images from Docker Hub to GitHub Container Registry (GHCR)**,
+This repository **mirrors selected public images from [Docker Hub](https://hub.docker.com/) to GitHub Container Registry (GHCR)**,
 so you can pull them without depending on Docker Hub's availability or being subject to its rate limits.
 
 > **NOTE:** The purpose of **dockerhub-mirror** is _not_ to mirror every image available on Docker Hub.
