@@ -27,6 +27,8 @@ the slash is replaced with a double underscore (`__`) to separate the upstream o
 | `busybox:latest`                    | `ghcr.io/dockerhub-mirror/busybox:latest`
 | `busybox:stable`                    | `ghcr.io/dockerhub-mirror/busybox:stable`
 | `busybox:stable-musl`               | `ghcr.io/dockerhub-mirror/busybox:stable-musl`
+| `clamav/clamav:latest`              | `ghcr.io/dockerhub-mirror/clamav__clamav:latest`
+| `clamav/clamav:stable`              | `ghcr.io/dockerhub-mirror/clamav__clamav:stable`
 | `debian:bookworm`                   | `ghcr.io/dockerhub-mirror/debian:bookworm`
 | `debian:bookworm-slim`              | `ghcr.io/dockerhub-mirror/debian:bookworm-slim`
 | `debian:stable`                     | `ghcr.io/dockerhub-mirror/debian:stable`

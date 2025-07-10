@@ -12,6 +12,8 @@ env:
     busybox:stable-musl
     bitnami/minideb:bookworm
     bitnami/minideb:latest
+    clamav/clamav:latest
+    clamav/clamav:stable
     debian:bookworm
     debian:bookworm-slim
     debian:stable
