@@ -140,7 +140,13 @@ jobs:
           name="${image%%:*}"
           tag="${image#*:}"
           repo="${name//\//__}"  # replace org/repo separator / with __
-          (set -x; regctl image copy --verbosity debug --digest-tags --referrers "docker.io/$image" "ghcr.io/${{ github.repository_owner }}/$repo:$tag")
+          (set -x; regctl image copy \
+            --verbosity debug \
+            --digest-tags \
+            --include-external \
+            --referrers \
+            "docker.io/$image" \
+            "ghcr.io/${{ github.repository_owner }}/$repo:$tag")
           repos+=("$repo")
           echo "::endgroup::"
         done <<< "$SOURCE_IMAGES"
