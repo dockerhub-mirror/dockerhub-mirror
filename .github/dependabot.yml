@@ -12,6 +12,6 @@ updates:
     prefix-development: ci
     include: scope
   labels:
-  - pinned
   - dependencies
   - gha
+  - pinned

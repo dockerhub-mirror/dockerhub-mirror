@@ -1,4 +1,4 @@
-# https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 name: Mirror Docker Images
 
 env:
@@ -30,9 +30,9 @@ env:
     registry:latest
     tonistiigi/binfmt:latest
 
-on:
+on:  # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
   schedule:
-    # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
+    # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
     - cron: '30 1 * * *'  # Runs daily at 01:30 UTC
   push:
     branches-ignore:  # build all branches except:
@@ -51,7 +51,7 @@ on:
     - '.github/*.yml'
     - '.github/workflows/keepalive.yml'
   workflow_dispatch:
-    # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
+    # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_dispatch
 
 defaults:
   run:
