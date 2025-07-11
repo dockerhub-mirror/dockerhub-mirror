@@ -78,7 +78,7 @@ jobs:
     - name: "Show: GitHub context"
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
-      run: echo $GITHUB_CONTEXT
+      run: printf '%s' "$GITHUB_CONTEXT" | python -m json.tool
 
 
     - name: "Show: environment variables"
@@ -87,6 +87,10 @@ jobs:
 
     - name: Install regclient
       uses: iarekylew00t/regctl-installer@v3
+
+
+    - name: "Show: regclient version"
+      run: regctl version
 
 
     - name: Login to docker.io
@@ -132,12 +136,13 @@ jobs:
         while IFS= read -r image; do
           image=$(echo "$image" | xargs)  # trim spaces
           [[ -n "$image" ]] || continue  # skip if the line is empty
-          echo "🔄 Mirroring [$image]..."
+          echo "::group::🔄 Mirroring [$image]..."
           name="${image%%:*}"
           tag="${image#*:}"
           repo="${name//\//__}"  # replace org/repo separator / with __
-          regctl image copy --referrers "docker.io/$image" "ghcr.io/${{ github.repository_owner }}/$repo:$tag"
+          (set -x; regctl image copy --verbosity debug --digest-tags --referrers "docker.io/$image" "ghcr.io/${{ github.repository_owner }}/$repo:$tag")
           repos+=("$repo")
+          echo "::endgroup::"
         done <<< "$SOURCE_IMAGES"
         
         IFS=','; repos_joined="${repos[*]}"
