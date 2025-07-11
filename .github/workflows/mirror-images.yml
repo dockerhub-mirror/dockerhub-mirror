@@ -150,15 +150,15 @@ jobs:
           repos+=("$repo")
           echo "::endgroup::"
         done <<< "$SOURCE_IMAGES"
-        
-        IFS=','; repos_joined="${repos[*]}"
-        echo "package_names=${repos_joined}" >> "$GITHUB_OUTPUT"
+
+        packages=$(printf '%s\n' "${repos[@]}" | sort -u | paste -sd ',')
+        echo "packages=${packages}" >> "$GITHUB_OUTPUT"
 
 
     - name: Delete untagged images
       uses: dataaxiom/ghcr-cleanup-action@v1
       with:
-        packages: ${{ steps.mirror_images.outputs.package_names }}
+        packages: ${{ steps.mirror_images.outputs.packages }}
         delete-untagged: true
         delete-partial-images: true
         delete-ghost-images: true
