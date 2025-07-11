@@ -33,16 +33,16 @@ the slash is replaced with a double underscore (`__`) to separate the upstream o
 | `debian:bookworm-slim`              | `ghcr.io/dockerhub-mirror/debian:bookworm-slim`
 | `debian:stable`                     | `ghcr.io/dockerhub-mirror/debian:stable`
 | `debian:stable-slim`                | `ghcr.io/dockerhub-mirror/debian:stable-slim`
-| `moby/buildkit:buildx-stable-1`     | `ghcr.io/dockerhub-mirror/buildkit:buildx-stable-1`
-| `moby/buildkit:buildx-stable-1-rootless` | `ghcr.io/dockerhub-mirror/buildkit:buildx-stable-1-rootless`
-| `moby/buildkit:latest`              | `ghcr.io/dockerhub-mirror/buildkit:latest`
-| `moby/buildkit:rootless`            | `ghcr.io/dockerhub-mirror/buildkit:rootless`
+| `moby/buildkit:buildx-stable-1`     | `ghcr.io/dockerhub-mirror/moby__buildkit:buildx-stable-1`
+| `moby/buildkit:buildx-stable-1-rootless` | `ghcr.io/dockerhub-mirror/moby__buildkit:buildx-stable-1-rootless`
+| `moby/buildkit:latest`              | `ghcr.io/dockerhub-mirror/moby__buildkit:latest`
+| `moby/buildkit:rootless`            | `ghcr.io/dockerhub-mirror/moby__buildkit:rootless`
 | `node:current`                      | `ghcr.io/dockerhub-mirror/node:current`
 | `node:current-slim`                 | `ghcr.io/dockerhub-mirror/node:current-slim`
 | `node:lts`                          | `ghcr.io/dockerhub-mirror/node:lts`
 | `node:lts-slim`                     | `ghcr.io/dockerhub-mirror/node:lts-slim`
 | `registry:latest`                   | `ghcr.io/dockerhub-mirror/registry:latest`
-| `multiarch/qemu-user-static:latest` | `ghcr.io/dockerhub-mirror/multiarch_qemu-user-static:latest`
+| `multiarch/qemu-user-static:latest` | `ghcr.io/dockerhub-mirror/multiarch__qemu-user-static:latest`
 | `tonistiigi/binfmt:latest`          | `ghcr.io/dockerhub-mirror/tonistiigi__binfmt:latest`
 
 > **Example**
