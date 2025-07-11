@@ -13,7 +13,7 @@ so you can pull them without depending on Docker Hub's availability or being sub
 
 ## Where to Pull
 
-All images live under the namespace `ghcr.io/dockerhub-mirrors`.
+All images live under the namespace `ghcr.io/dockerhub-mirror`.
 When an upstream image name contains a slash (i.e. includes an organisation as well as a repository),
 the slash is replaced with a double underscore (`__`) to separate the upstream organisation and repository names.
 
