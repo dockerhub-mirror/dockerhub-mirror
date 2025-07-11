@@ -136,7 +136,7 @@ jobs:
           name="${image%%:*}"
           tag="${image#*:}"
           repo="${name//\//__}"  # replace org/repo separator / with __
-          regctl image copy "docker.io/$image" "ghcr.io/${{ github.repository_owner }}/$repo:$tag"
+          regctl image copy --referrers "docker.io/$image" "ghcr.io/${{ github.repository_owner }}/$repo:$tag"
           repos+=("$repo")
         done <<< "$SOURCE_IMAGES"
         
