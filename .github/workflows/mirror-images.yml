@@ -86,7 +86,7 @@ jobs:
 
 
     - name: Install regclient
-      uses: iarekylew00t/regctl-installer@v3
+      uses: iarekylew00t/regctl-installer@v4
 
 
     - name: "Show: regclient version"
