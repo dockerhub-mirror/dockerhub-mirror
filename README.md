@@ -29,10 +29,10 @@ the slash is replaced with a double underscore (`__`) to separate the upstream o
 | [busybox](https://hub.docker.com/_/busybox):stable-musl | ghcr.io/dockerhub-mirror/busybox:stable-musl
 | [clamav/clamav](https://hub.docker.com/r/clamav/clamav):latest | ghcr.io/dockerhub-mirror/clamav__clamav:latest
 | [clamav/clamav](https://hub.docker.com/r/clamav/clamav):stable | ghcr.io/dockerhub-mirror/clamav__clamav:stable
-| [debian](https://hub.docker.com/_/debian):bookworm      | ghcr.io/dockerhub-mirror/debian:bookworm
-| [debian](https://hub.docker.com/_/debian):bookworm-slim | ghcr.io/dockerhub-mirror/debian:bookworm-slim
-| [debian](https://hub.docker.com/_/debian):stable        | ghcr.io/dockerhub-mirror/debian:stable
-| [debian](https://hub.docker.com/_/debian):stable-slim   | ghcr.io/dockerhub-mirror/debian:stable-slim
+| [debian](https://hub.docker.com/_/debian):stable      | ghcr.io/dockerhub-mirror/debian:stable
+| [debian](https://hub.docker.com/_/debian):stable-slim | ghcr.io/dockerhub-mirror/debian:stable-slim
+| [debian](https://hub.docker.com/_/debian):trixie      | ghcr.io/dockerhub-mirror/debian:trixie
+| [debian](https://hub.docker.com/_/debian):trixie-slim | ghcr.io/dockerhub-mirror/debian:trixie-slim
 | [moby/buildkit](https://hub.docker.com/r/moby/buildkit):buildx-stable-1          | ghcr.io/dockerhub-mirror/moby__buildkit:buildx-stable-1
 | [moby/buildkit](https://hub.docker.com/r/moby/buildkit):buildx-stable-1-rootless | ghcr.io/dockerhub-mirror/moby__buildkit:buildx-stable-1-rootless
 | [moby/buildkit](https://hub.docker.com/r/moby/buildkit):latest                   | ghcr.io/dockerhub-mirror/moby__buildkit:latest

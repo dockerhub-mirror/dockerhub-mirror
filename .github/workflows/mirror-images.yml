@@ -14,10 +14,10 @@ env:
     bitnami/minideb:latest
     clamav/clamav:latest
     clamav/clamav:stable
-    debian:bookworm
-    debian:bookworm-slim
     debian:stable
     debian:stable-slim
+    debian:trixie
+    debian:trixie-slim
     moby/buildkit:latest
     moby/buildkit:rootless
     moby/buildkit:buildx-stable-1
